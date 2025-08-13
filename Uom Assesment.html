@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+       
+        <title>Sri Lankan Beaches </title>
+        <style>  
+h1{color: navy;
+    text-align: center;
+}
+
+body{background: linear-gradient(to bottom right, aqua, #75ace8,rgb(228, 13, 228),aqua, rgb(40, 219, 236),rgb(218, 54, 212), #8119add2);
+padding: 8px;
+}
+
+p{align-content: self;
+padding: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 25px;
+line-height: 1.4 ;
+}
+p::first-letter{font-size: 60px;
+    font-weight: 900;
+    color: blue;
+    padding: 10px 5px 5px 0px;
+    float: left;
+    line-height: 15px;}
+li{font-size: 25px;}
+
+.transform-animation:hover{transform:rotate(30deg);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform-origin: center;
+}
+.transform-animation2:hover{transform:rotate(-30deg);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform-origin: center;
+}
+
+img{ width: 420px;
+    height: 250px;
+    border: solid white 4px;}
+
+.image{float: right;
+    width:460px;
+    height:460px;
+    padding: 3px 15px 0px 5px ;}
+
+
+    video{display: block ;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    audio{display: hidden;}
+
+    table{
+    background-color: aliceblue;
+     margin: 60px;
+    padding: 5px;
+    width: 820px;
+    height:320px;
+    font-size:25px;
+    text-align: center;}
+
+     td.a{text-decoration: none;}
+
+    h2{
+        text-align: center;
+        color: blue;
+    }
+
+        </style>
+
+
+    </head>
+
+    <body>
+<h1> Beaches in Sri Lanka</h1>
+<img  class="image" src="beach2.jpg"  alt="Beach image">
+
+<p> Sri Lanka is a tropical island in the deep blue waters of the Indian ocean and the Bay of Bengal. The
+country is endowed with over a thousand miles of beautiful golden beaches that are fringed with coconut palms
+making it in the ideal destination for a beach holiday. A large percentage of luxurious resorts and villas as well as
+budget hotels are located along the coastal side to offer tourists some of  the best beach holidays in Sri Lanka.<br>
+There are few famous beaches in Sri Lanka<br></p>
+<ul type="square">
+    <li> Hikkaduwa</li>
+    <li>Nilaweli</li>
+    <li>Marble Beach</li>
+    <li> Unawatuna</li>
+</ul>
+
+<table border=" 5px solid black" > 
+    <tr>
+        <th> Beach Name</th>
+        <th> Located City </th>
+        <th> Map location  </th>
+    </tr>
+
+    <tr>
+        <td> Hikkaduwa</td>
+        <td> Galle</td>
+        <td> <a href="https://g.co/kgs/wB326D9" target="_blank">Open on maps</a></td>
+    </tr>
+
+    <tr>
+        <td> Marble Beach</td>
+        <td> Trincomalee</td>
+        <td> <a href="https://g.co/kgs/w2v1bFR" target="_blank">Open on maps</a></td>
+    </tr>
+
+    <tr>
+        <td>Unawatuna</td>
+        <td>Galle</td>
+        <td> <a href="https://g.co/kgs/V4m4Sqe" target="_blank">Open on maps</a></td>
+    </tr>
+
+    <tr>
+        <td> Nilaweli</td>
+        <td> Trincomalee</td>
+        <td> <a href="https://g.co/kgs/fotSzQU" target="_blank">Open on maps</a></td>
+    </tr>
+    <tr>
+        <td> Jungle Beach</td>
+        <td> Galle</td>
+        <td> <a href="https://g.co/kgs/wB326D9" target="_blank">Open on maps</a></td>
+    </tr>
+
+</table>
+
+<img class= "transform-animation" src="beach7jpg.jpg" alt="Beach2">
+<img class= "transform-animation2" src="beach4.jpg" alt="Beach4">
+<img  class ="transform-animation" src="beach1.jpg" alt="Beach1"><br>
+<img class= "transform-animation2" src="beachjpg.jpg" alt="Beach5">
+<img class ="transform-animation" src="beach6jpg.jpg" alt="Beach6">
+<img  class= "transform-animation2" src="beach3jpg.jpg" alt="Beach3"><br>
+<video width="720px " height="440px" controls autoplay off>
+<source src="beachvideo.mp4" type="video/mp4">
+<audio autoplay loop>
+    <source src="beachaudio.mp3" type="audio/mp3">
+</audio>
+</video>
+
+<script>
+       function largetext(){
+                document.getElementById("hov").style.fontSize="45px" ;
+            }
+            function normaltext(){
+                document.getElementById("hov").style.fontSize= "25px" ;
+            }
+</script>
+<h2 id="hov" onmouseover="largetext()" onmouseout="normaltext()">Thank You!</p>
+
+    </body>
+</html>

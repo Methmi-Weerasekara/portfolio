@@ -1,0 +1,3 @@
+This is a simple web page regarding Sri Lankan beaches.
+I used html ,css and javascript to make this simple webpage.
+To make this page responsive I've used <meta viewport> tag and I used several strategies to attract the user such like an  hidden auto-play background music, a gradient colored background and a video clip.
