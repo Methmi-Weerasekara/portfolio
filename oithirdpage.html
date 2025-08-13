@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oishii</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style> 
+
+
+.body{padding: 10px;}
+
+  .highlight-section {
+      background-color: hsla(330, 90%, 92%, 0.475); 
+    }
+    .learn-more-link {
+      text-decoration: none;
+      border-bottom: 1px solid #d9534f;
+      color: #000;
+      font-weight: 500;
+    }
+    .learn-more-link:hover {
+      color: #d9534f;
+      border-color: #d9534f;}
+
+  
+
+      .highlight-section2 {
+      background-color: rgba(247, 138, 227, 0.475); 
+      min-height: 20vh;}
+
+
+      .custom-banner {
+  background-color: #f4f0e9; 
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.stawberry-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 300px;
+}
+
+.left-image {
+  left: 0;
+}
+
+.right-image {
+  right: 0;
+}
+
+.btn-signup {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-signup:hover {
+  color: red;
+  border-color: darkred;
+}
+.custom-modal {
+  background: url('oisc9.jpeg') center/cover no-repeat;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.custom-input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 20px;
+}
+
+.custom-input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+  #success-message{
+    display:none;
+    color:white;
+    margin: top 20px;
+  }
+  
+  
+  </style>
+
+   
+  </head>
+  <body>
+<!--Navbar-->
+<nav class="navbar fixed-top bg-body-tertiary">
+<ul class="nav nav-pills">
+   
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR FRUIT</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#"> The Omasake Berry</a></li>
+        <li><a class="dropdown-item" href="#">The Kayo Berry</a></li>
+        <li><a class="dropdown-item" href="#">The Ruby Tomato</a></li>
+      </ul>
+    </li>
+
+       
+          
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >LEARN MORE</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Our Farms</a></li>
+          <li><a class="dropdown-item" href="#">Our Story</a></li>
+          <li><a class="dropdown-item" href="#">Sustainability</a></li>
+          <li><a class="dropdown-item" href="#">Recipes</a></li>
+          <li><a class="dropdown-item" href="#">Partnership & colabs</a></li>
+          <li><a class="dropdown-item" href="#">Press</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+        <div class="mx-auto p-4">
+        
+          <a class="navbar-brand mx-auto fw-bold fs-3" href="#">OIISHII</a>
+              <img src="oishiilogo.png" alt="Logo" width="60px" height="70px" class= "mx-auto p-2" style=" width: 200px d-inline-block align-text-top;">
+              
+            </a>
+          </div>
+        
+      </li>
+
+
+    <li class="nav-item " >
+        <form class="container-fluid Right ">
+          <button class="btn btn-outline-danger rounded-pill ms-auto">FIND US IN STORE</button>
+            </form>
+    </li>
+     </ul>
+     </nav>   
+
+
+ <!-- Hero Section -->
+ <div class="container-fluid highlight-section d-flex align-items-center ">
+  <div class="row w-100">
+
+    <!-- Left Text Column -->
+    <div class="col-md-6 d-flex flex-column justify-content-center p-5">
+      <h1 class="display-5 fw-semibold mx-5">Now Available in Chicago</h1>
+      <p class="mb-4 mx-5">The refreshingly sweet, subtly tart Koyo Berry is now available in Chicago at select Whole Foods Market locations!</p>
+      <a href="#" class="learn-more-link mx-5">LEARN MORE</a>
+    </div>
+    
+    <!-- Right Image Column -->
+    <div class="col-md-6 p-0">
+      <img src="oisc2.webp" class="img-fluid w-100 h-85 mx-5" alt="Child eating berry">
+    </div>
+  </div>
+</div>
+
+<!--sign in message-->
+
+<section class="custom-banner d-flex justify-content-center align-items-center text-center">
+    <img src="ois6.jpg" class="stawberry-image left-image d-none d-md-block" alt="berry">
+    
+    <div class="content">
+      <img src="oishiilogo.png" alt="logo" class="mb-3" style="height: 40px;">
+      <h2 class="mb-2">Not in your area? We're coming that way soon.</h2>
+      <p class="mb-3">Be the first to know when Oishii is available near you.</p>
+     
+      <!-- Trigger Button -->
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">
+         Signup 
+      </button>    </div>
+  
+    <img src="oisc7webp.webp" class="stawberry-image right-image d-none d-md-block" alt="Right hand holding strawberry">
+  </section>
+  
+  
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-white custom-modal">
+        <div class="modal-body p-5">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+          <h2 class="mb-4 fw-bold">Coming your way soon</h2>
+
+          <div id="success-message">
+            <h2>Thanks! Keep in touch with us..</h2>
+            <p> We will let you in soon.</p>
+          </div>
+            
+  
+          <form id="signupForm">
+            <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="form-label text-uppercase small">Email Address*</label>
+                  <input type="email" class="form-control custom-input" placeholder="Enter email address" required>
+                </div>
+
+              <div class="col-md-6">
+                  <label class="form-label text-uppercase small">Zipcode</label>
+                  <input type="text" class="form-control custom-input" placeholder="Enter zipcode">
+              </div>
+            </div>
+  
+            <button type="submit" id="signupbutton" class="btn btn-light">Sign Up </button>         
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById("signupForm").addEventListener('submit', function(e ){
+      e.preventDefault();
+      document.getElementById('success-message').style.display='block';
+    });
+    
+  </script>
+  
+
+  
+<!--pagination-->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+    
+      <a class="page-link">
+        <li class="page-item"><a class="page-link" href="oisecondpage.html">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="oiindex.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="oisecondpage.html">2</a></li>
+    <li class="page-item ">
+      <a class="page-link" href="oiindex.html">Home</a>
+    </li>
+  </ul>
+</nav>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+ <!--footer-->
+ <div class="container my-4">
+
+    <footer class="bg-danger text-center text-lg-start text-white ">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+            <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+              <img src="oishiilogo.png" height="70" alt="oishiilogo">
+            </div>
+  
+            <p class="text-center">It's always strawberry season</p>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-right">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Company</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Our Farms</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>The Omakase Berry</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>The Kayo Berry</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>The ruby Tomato</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Find Us in store</a>
+              </li>
+            
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Support</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact information</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Careers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Instagram</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>FAQ</a>
+              </li>
+            </ul>
+          </div>
+         
+  
+       
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © Oishii 2025 
+        <a class="text-white" href="https://oishii.com/">oishii.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+  </div>
+  <!-- End of .container -->
+
+
+ 
+</body>
+
+
+
+</html>
