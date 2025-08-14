@@ -39,6 +39,26 @@
    }
 
 
+     .nav-links {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: none;
+  }
+
+    .nav-links.active {
+    display: block;
+  }
+
+
+  .nav-links ul {
+  display: column;
+  gap: 1rem;
+  }
+
 li a {
   position:relative;
   color:white;
@@ -80,10 +100,16 @@ li a:hover::before{
 
 }
 
-#menu-icon{
-  font-size:2rem;
-  display:none;
-}
+
+   #menu-icon {
+    display: block;
+  }
+  @media (min-width: 768px) {
+    #menu-icon {
+      display: none;
+    }
+  }
+  
 section{
   min-height: 100vh;
   padding:8rem 12%;
