@@ -116,7 +116,14 @@ li a:hover::before{
   .visit-btn {
     display: none;
   }
-
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: block;
+  }
+}
   .nav-links {
     position: absolute;
     top: 4.5rem;
