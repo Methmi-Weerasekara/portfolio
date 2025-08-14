@@ -36,7 +36,6 @@
   gap: 2rem;
 }
 
-/* Hide menu icon by default */
 #menu-icon {
   font-size: 2rem;
   display: none;
@@ -44,14 +43,11 @@
   color: white;
 }
 
-/* For small screens */
 @media (max-width: 768px) {
-  /* Hide the GitHub button to save space */
   .visit-btn {
     display: none;
   }
 
-  /* Stack menu vertically & hide by default */
   .nav-links {
     position: absolute;
     top: 4.5rem;
@@ -67,12 +63,10 @@
     gap: 1rem;
   }
 
-  /* Show menu when active */
   .nav-links.active {
     display: block;
   }
 
-  /* Show hamburger icon on mobile */
   #menu-icon {
     display: block;
   }
