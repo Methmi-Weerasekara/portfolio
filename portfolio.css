@@ -38,6 +38,15 @@
     gap:2rem;
    }
 
+  .nav-links {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+  }
 
      .nav-links {
     position: absolute;
@@ -109,7 +118,7 @@ li a:hover::before{
       display: none;
     }
   }
-  
+
 section{
   min-height: 100vh;
   padding:8rem 12%;
